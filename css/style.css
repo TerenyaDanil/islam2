@@ -129,6 +129,16 @@ h6 {
   font-size: inherit;
 }
 
+*::-moz-selection {
+  background: rgba(254, 205, 1, 0.6) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+*::selection {
+  background: rgba(254, 205, 1, 0.6) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 html {
   font-size: 10px;
 }
@@ -179,6 +189,10 @@ body._lock {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-family: Gilroy;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-weight: 600;
   font-size: 2rem;
   color: #000000;
@@ -203,6 +217,18 @@ body._lock {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: 12;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .plus {
@@ -412,8 +438,8 @@ body._lock {
 
 .bot-header__name {
   position: absolute;
-  bottom: 70px;
-  right: 50px;
+  bottom: 110px;
+  right: 100px;
   font-size: 2.2rem;
   text-align: center;
   z-index: 10;

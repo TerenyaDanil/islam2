@@ -93,3 +93,160 @@ var swiper = new Swiper('.rev__slider', {
     }
 
 });
+
+let header = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".header",   // pin the trigger element while active
+        start: "top center",
+
+
+
+
+    }
+});
+
+
+header.from(".bot-header__man", { duration: 1.7, ease: "power4.out", opacity: 0, x: 250 }, "+=0.2")
+    .from(".bot-header__name", { duration: 1.2, ease: "power4.out", opacity: 0, y: 150 }, "-=0.8")
+    .from(".bot-header__title", { duration: 2, ease: "power4.out", opacity: 0, x: -350 }, "-=0.4")
+    .from(".bot-header__btn", { duration: 1.7, ease: "power4.out", opacity: 0, x: -150 }, "-=0.8")
+
+
+
+
+let about = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".about",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play pause resume reverse",
+
+
+    }
+});
+
+about.from(".about__title", { duration: 1.5, ease: "power4.out", opacity: 0, y: 350 })
+    .from(".about__text", { duration: 1.6, ease: "power4.out", opacity: 0, y: 150 }, "-=0.8")
+    .from(".about__dop", { duration: 2, ease: "power4.out", opacity: 0, y: 50 }, "-=0.8")
+
+
+
+
+let info = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".info",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+info.from(".info__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
+    .from(".inner-info__item-1", { duration: 1.3, ease: "power4.out", opacity: 0, x: -150 }, "-=0.6")
+    .from(".inner-info__item-2", { duration: 1.3, ease: "power4.out", opacity: 0, x: 150 }, "-=0.6")
+    .from(".inner-info__item-3", { duration: 1.3, ease: "power4.out", opacity: 0, x: -150 }, "-=0.6")
+    .from(".inner-info__item-4", { duration: 1.3, ease: "power4.out", opacity: 0, x: 150 }, "-=0.6")
+    .from(".inner-info__item-5", { duration: 1.3, ease: "power4.out", opacity: 0, x: -150 }, "-=0.6")
+    .from(".inner-info__item-6", { duration: 1.3, ease: "power4.out", opacity: 0, x: 150 }, "-=0.6")
+
+
+let forr = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".for",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+forr.from(".for__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
+    .from(".for-inner__item-1", { duration: 1.2, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".for-inner__item-2", { duration: 1.2, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".for-inner__item-3", { duration: 1.2, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".for-inner__item-4", { duration: 1.2, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+
+
+let cource = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".cource",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+
+cource.from(".do__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
+    .from(".inner-do__item-1", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-2", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-3", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-4", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-5", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-6", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-7", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".inner-do__item-8", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+
+
+let speakers = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".speakers",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+speakers.from(".speakers__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
+    .from(".wrap-speakers__img-1", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".speakers__text-1", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".wrap-speakers__img-2", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".speakers__text-2", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".wrap-speakers__img-3", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".speakers__text-3", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".wrap-speakers__img-4", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+    .from(".speakers__text-4", { duration: 1, ease: "power4.out", opacity: 0, y: 150 }, "-=0.6")
+
+
+let program = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".program",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+program.from(".program__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
+
+
+
+let tarif = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".tarif",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+tarif.from(".tarif__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
+
+
+
+let qustions = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".qustions",   // pin the trigger element while active
+        start: "top 60% ",
+        end: "center 40%",
+        toggleActions: "play resume resume reverse",
+
+    }
+});
+
+qustions.from(".qustions__title", { duration: 1.6, ease: "power4.out", opacity: 0, y: 250 })
